@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+	background: linear-gradient(to right, #743578, #c3266f);
+    
+}
+
+.main-content{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.resume{
+	width: 800px;
+	background: #fff;
+	margin: 25px auto;
+	display: flex;
+}
+
+.left{
+	background: #3f4247;
+	width: 250px;
+	padding: 0 20px;
+}
+
+.right{
+	width: calc(100% - 250px);
+}
+
+.left .img_holder{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.left .img_holder img{
+	width: 200px;
+	border-radius: 30px;
+}
+
+.pb{
+	padding-bottom: 20px;
+}
+
+.title{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	color: #c3266f;
+	position: relative;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.title:before{
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 50px;
+	height: 3px;
+	background: #c3266f;
+}
+
+.left .icon{
+	font-size: 20px;
+	color: #9153c9;
+}
+
+.left .text{
+	color: #9153c9;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.contact .li_wrap{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.contact .li_wrap .text{
+	width: calc(100% - 50px);
+	word-break: break-word;
+	color: #fff;
+}
+
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.skills .li_wrap{
+	background: #fff;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+	margin-top: 5px;
+}
+
+.hobbies .li_wrap{
+	border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+	color: #fff;
+}
+
+.hobbies .li_wrap:hover{
+	background: #fff;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+	color: #9153c9;
+}
+
+.header{
+	background: #3f4247;
+	padding: 15px 30px;
+	color: #fff;
+	height: 240px;
+}
+
+.header .name{
+	font-size: 52px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #c3266f;
+}
+
+.header .role{
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.header .about{
+	margin-top: 20px;
+	line-height: 26px;
+}
+
+.right_inner{
+	padding: 30px;
+	color: #3f4247;
+}
+
+.right_inner .education{
+	margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: #9153c9;
+}
+
+.right_inner .li_wrap .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+}
+
+.right_inner .li_wrap .info_title{
+	text-transform: uppercase;
+    white-space: nowrap;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #9153c9;
+}
+
+.right_inner .li_wrap .info_com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont{
+	margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #9153c9;
+	border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background: #9153c9;
+}
+.content{
+	width: 350px;
+	float: left;
+	height: 190px;
+    margin-top: 0px;
+}
+.p5{
+    /*padding-left: 70px;
+    position: relative; 
+    display: inline-block;
+    float: left;
+    margin: 0px; 
+    width: 80px;*/
+    width: calc(100% - 60px);
+	word-break: break-word;
+	color: #fff;
+    position: relative; 
+    display: inline-block;
+    float: left;
+    margin: 0px;
+}
+.span-all{
+	width: 150px;
+    height: 30px;
+    float: left;
+    margin-top: 3px;
+    position: relative;
+    margin-left: -200px;
+}
+.circle-span{
+	background: #9153c9;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 10px;
+    left: 13px;
+}
+.circle-span1{
+	background: #9153c9;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 10px;
+    left: 36px;
+}
+.circle-span2{
+	background: #9153c9;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 10px;
+    left: 59px;
+}
+.circle-span3{
+	background: #9153c9;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 10px;
+    left: 82px;
+}
+.circle-span4{
+    background: #9153c9;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 10px;
+    left: 105px;
+}
+.circle-null2{
+	background: #fff;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 10px;
+    left: 59px;
+}
+.circle-null1{
+	background: #fff;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 10px;
+    left: 82px;
+}
+.circle-null{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 10px;
+    left: 105px;
+}
+/*.clearfix{clear: both;}*/
+
+.skills{
+    display: flex;
+}
+
+/*Media Querries*/
+@media screen and (max-width:823px){
+    .title::after{
+        width: 40%;
+    }
+}
+@media screen and (max-width:681px){
+    .title::after{
+        width: 30%;
+    }
+}
+@media screen and (max-width:780px){
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:780px){
+    .left{
+        grid-column: span 3;
+    }
+    .right{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:1200px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:700px){
+    .profile img{
+        width: 60%;
+    }
+}
+@media screen and (max-width:390px){
+    .name{
+        font-size: 1.5rem;
+    }
+}
